@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rima Jamli - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #a78bfa, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-700">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold gradient-text">
+                    Rima Jamli
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-blue-400 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-blue-400 transition-colors">About</a>
+                    <a href="#skills" class="text-gray-300 hover:text-blue-400 transition-colors">Skills</a>
+                    <a href="#projects" class="text-gray-300 hover:text-blue-400 transition-colors">Projects</a>
+                    <a href="#contact" class="text-gray-300 hover:text-blue-400 transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-gray-800 border-t border-gray-700">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#home" class="block px-4 py-2 hover:bg-gray-700 rounded">Home</a>
+                <a href="#about" class="block px-4 py-2 hover:bg-gray-700 rounded">About</a>
+                <a href="#skills" class="block px-4 py-2 hover:bg-gray-700 rounded">Skills</a>
+                <a href="#projects" class="block px-4 py-2 hover:bg-gray-700 rounded">Projects</a>
+                <a href="#contact" class="block px-4 py-2 hover:bg-gray-700 rounded">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center px-4 pt-16">
+        <div class="text-center max-w-4xl mx-auto">
+            <div class="mb-8">
+                <div class="w-32 h-32 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-5xl font-bold">
+                    RJ
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 gradient-text">
+                Rima Jamli
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                Computer Networks and Systems Engineering Student
+            </p>
+            <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+                Focused on Linux systems, virtualization, monitoring, system supervision, and automation
+            </p>
+            <a href="#contact" class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
+                Get In Touch
+            </a>
+            <div class="mt-16 animate-bounce">
+                <svg class="w-8 h-8 mx-auto text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">
+                About Me
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-400">Who I Am</h3>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        I am a Computer Networks and Systems Engineering student focused on Linux systems, 
+                        virtualization, infrastructure monitoring and supervision, and automation. I build 
+                        stable and efficient environments while ensuring reliability through continuous 
+                        observation and automated processes.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        I am proactive, detail-oriented, and committed to delivering dependable and 
+                        well-structured system solutions.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700">
+                        <h3 class="text-2xl font-semibold mb-4 text-purple-400">Education</h3>
+                        <div class="space-y-2">
+                            <p class="text-lg font-semibold text-white">
+                                Bachelor's Degree in Computer Networks and Systems Engineering
+                            </p>
+                            <p class="text-gray-400">Since 2023 - Expected Graduation: June 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700">
+                        <h3 class="text-2xl font-semibold mb-4 text-pink-400">Experience</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="font-semibold text-white">Technical Manager - Elite Council ISIMA</p>
+                                <p class="text-sm text-gray-400">2024-2025</p>
+                                <p class="text-gray-300 text-sm mt-1">
+                                    Gained leadership and project management experience
+                                </p>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-white">Intern - Timsoft</p>
+                                <p class="text-sm text-gray-400">June 2025 - July 2025</p>
+                                <p class="text-gray-300 text-sm mt-1">
+                                    Gained practical experience in IT infrastructure projects, collaborating with the team to improve systems and implement best practices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700">
+                <h3 class="text-2xl font-semibold mb-6 text-center text-green-400">Services I Offer</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="flex items-start space-x-2">
+                        <span class="text-green-400 mt-1">✓</span>
+                        <span class="text-gray-300">Linux system installation, configuration, and maintenance</span>
+                    </div>
+                    <div class="flex items-start space-x-2">
+                        <span class="text-green-400 mt-1">✓</span>
+                        <span class="text-gray-300">Network configuration and basic security hardening</span>
+                    </div>
+                    <div class="flex items-start space-x-2">
+                        <span class="text-green-400 mt-1">✓</span>
+                        <span class="text-gray-300">Monitoring and system supervision solutions</span>
+                    </div>
+                    <div class="flex items-start space-x-2">
+                        <span class="text-green-400 mt-1">✓</span>
+                        <span class="text-gray-300">Infrastructure automation</span>
+                    </div>
+                    <div class="flex items-start space-x-2">
+                        <span class="text-green-400 mt-1">✓</span>
+                        <span class="text-gray-300">DNS configuration and filtering</span>
+                    </div>
+                    <div class="flex items-start space-x-2">
+                        <span class="text-green-400 mt-1">✓</span>
+                        <span class="text-gray-300">Virtual machine setup and optimization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 bg-gray-800/30">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">
+                Technical Skills
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-colors">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-400">Operating Systems</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>Linux (Debian, Ubuntu, Kali)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-colors">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-400">Virtualization</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>VirtualBox</span>
+                        </li>
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>VMware</span>
+                        </li>
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>GNS3</span>
+                        </li>
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>EVE-NG</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-colors">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-400">Networking</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>DNS</span>
+                        </li>
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>SDN fundamentals</span>
+                        </li>
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>TCP/IP</span>
+                        </li>
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>HTTP</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-colors">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-400">Monitoring & Supervision</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>Grafana</span>
+                        </li>
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>Prometheus</span>
+                        </li>
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>System and network monitoring</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-colors">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-400">Automation</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>Ansible</span>
+                        </li>
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>Infrastructure task automation</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-colors">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-400">SDN</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>OpenDaylight</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-colors">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-400">Other</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>Basic AI</span>
+                        </li>
+                        <li class="text-gray-300 flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span>Data preprocessing</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 grid md:grid-cols-2 gap-6">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-semibold mb-4 text-yellow-400">Personal Skills</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                            <span class="text-gray-300">Strong mathematical and analytical abilities</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                            <span class="text-gray-300">Active listening and clear explanation of ideas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-semibold mb-4 text-green-400">Languages</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">Arabic</span>
+                            <span class="text-green-400 font-semibold">Native</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">French</span>
+                            <span class="text-green-400 font-semibold">Fluent</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">English</span>
+                            <span class="text-green-400 font-semibold">Fluent</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">Spanish</span>
+                            <span class="text-yellow-400 font-semibold">Beginner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">
+                Featured Projects
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-all transform hover:scale-105">
+                    <h3 class="text-xl font-bold mb-3 text-white">SDN Network</h3>
+                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">
+                        Implemented a software-defined network focusing on monitoring, supervision, and automation using Ansible. 
+                        Gained practical experience in observing network performance, managing traffic, and automating tasks efficiently.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">SDN</span>
+                        <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">Ansible</span>
+                        <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">Automation</span>
+                        <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">Monitoring</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-all transform hover:scale-105">
+                    <h3 class="text-xl font-bold mb-3 text-white">DNS Filtering</h3>
+                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">
+                        Configured a DNS system to block specific subdomains and improve network security. 
+                        Learned practical skills in DNS management and access control strategies.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">DNS</span>
+                        <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">Security</span>
+                        <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">Networking</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-all transform hover:scale-105">
+                    <h3 class="text-xl font-bold mb-3 text-white">AI Voice Classification</h3>
+                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">
+                        Trained a machine learning model to identify the speaker's gender from voice samples. 
+                        Applied AI and data preprocessing techniques to achieve accurate predictions.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">Machine Learning</span>
+                        <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">AI</span>
+                        <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">Data Processing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-gray-800/30">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 gradient-text">
+                Get In Touch
+            </h2>
+            <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700">
+                <p class="text-gray-300 mb-8 text-lg">
+                    I'm always open to discussing new projects, opportunities, or collaborations.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="mailto:rimajemli18@gmail.com" class="flex items-center space-x-3 bg-blue-500/20 hover:bg-blue-500/30 px-6 py-3 rounded-lg transition-colors">
+                        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="text-white">rimajemli18@gmail.com</span>
+                    </a>
+                    <a href="tel:29735926" class="flex items-center space-x-3 bg-purple-500/20 hover:bg-purple-500/30 px-6 py-3 rounded-lg transition-colors">
+                        <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <span class="text-white">29735926</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 border-t border-gray-700">
+        <div class="max-w-6xl mx-auto text-center text-gray-400">
+            <p>© 2025 Rima Jamli. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
